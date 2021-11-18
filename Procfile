@@ -1,1 +1,1 @@
-web: gunicorn project_manager:project_manager
+web: gunicorn project_manager.wsgi --log-file -
