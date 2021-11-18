@@ -1,0 +1,27 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="side">
+
+{% include 'sidebar.html' %}
+
+</div>
+
+<div class="main-container">
+<a class="go-back-link" href="{% url 'tasks' %}"><i class="ph-arrow-circle-left-fill"></i></a>
+<p class="unfinished-projects">Are you sure you want to delete <strong>"{{task}}"</strong></p>
+
+
+<a href="{% url 'tasks' %}">Go back</a>
+
+<form class="form" method="POST">
+	{% csrf_token %}
+	
+
+	<input class="button" value="Delete" type="submit" />
+</form>
+
+{% endblock %}

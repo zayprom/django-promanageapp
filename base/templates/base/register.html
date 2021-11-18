@@ -1,0 +1,37 @@
+{% extends 'main.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+<div class="side">
+	
+</div>
+
+<div class="main-container--login">
+<h1 class="heading-primary">Register</h1>
+
+<form class="form" method="POST">
+
+	{% csrf_token %}
+
+	<label class="form-field">
+	{{form.username.label}}</label>
+	<p class="forms">{{form.username}}</p>
+	<label class="form-field">{{form.password1.label}}</label>
+	<p class="forms">{{form.password1}}</p>
+	<label class="form-field">
+	<label class="form-field">{{form.password2.label}}</label>
+	<p class="forms">{{form.password2}}</p>
+		<label class="form-field">
+
+	<input type="submit" value="Register" />
+
+</form>
+
+<p class="unfinished-projects">Already have an account? <a class="project-card-link" href="{% url 'login' %}">Login</a></p>
+
+</div>
+
+{% endblock %}

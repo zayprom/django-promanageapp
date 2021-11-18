@@ -1,0 +1,26 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+
+{% block content %}
+
+<div class="side">
+
+{% include 'sidebar.html' %}
+
+</div>
+
+<div class="main-container">
+<a class="go-back-link" href="{% url 'projects' %}"><i class="ph-arrow-circle-left-fill"></i></a>
+<h1 class="heading-primary">Profile</h1>
+<a class="project-card-link" href="{% url 'profile-update' profile.id %}">Edit profile</a>
+
+<div class="profile-details">
+
+	<p class="unfinished-projects">{{profile.username}}</p>
+	<p class="unfinished-projects">{{profile.email}}</p>
+</div>
+</div>
+
+{% endblock %}

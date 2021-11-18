@@ -1,0 +1,24 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="side">
+	
+	{% include 'sidebar.html' %}
+</div>
+
+<div class="main-container">
+<a class="go-back-link" href="{% url 'projects' %}"><i class="ph-arrow-circle-left-fill"></i></a>
+<h1 class="heading-primary">Edit profile</h1>
+<a href="{% url 'projects' %}">Go back</a>
+
+
+<form  class="form" method="POST" action="">
+	{% csrf_token %}
+	{{form.as_p}}
+	<input type="submit" value="Submit" />
+</form>
+</div>
+
+{% endblock %}

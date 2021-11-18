@@ -1,0 +1,29 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="side">
+
+</div>
+
+<div class="main-container--login">
+<h1 class="heading-primary">Login</h1>
+
+<form class="form" method="POST">
+
+	{% csrf_token %}
+
+	{{form.as_p}}
+
+	<input type="submit" value="Login" />
+
+</form>
+
+<p class="unfinished-projects">Don't have an account? <a class="project-card-link" href="{% url 'register' %}">Register</a></p>
+
+</div>
+
+{% endblock %}
+

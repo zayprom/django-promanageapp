@@ -1,0 +1,51 @@
+{% load static %}
+
+
+<div class="side-links">
+	<p class="side-link"><a class="side-create-link" href="{% url 'project-create' %}">Create project</a></p>
+	<p class="side-link"><a class="side-projects-link" href="{% url 'projects' %}">All Projects</a></p>
+	<p class="side-link"><a class="side-tasks-link" href="{% url 'tasks' %}">All Tasks</a></p>
+</div>
+
+{% if request.user.is_authenticated %}
+
+<div class="info-widget-side">
+	<div class="projects-widget">
+		<p class="unfinished-projects--task">Projects status</p>
+	</div>
+	<div class="project_status"><p class="project_status_text--pending">Pending: {{count_projects_pending}}</p>
+	</div>
+	<div class="project_status"><p class="project_status_text--active">Active: {{count_projects_active}}</p>
+	</div>
+	<div class="project_status"><p class="project_status_text--waiting">Waiting: {{count_projects_waiting}}</p>
+	</div>
+	<div class="project_status"><p class="project_status_text--finished">Invoiced: {{count_projects_finished}}</p>
+	</div>
+<!-- 	<div class="projects-widget">
+		<p class="unfinished-projects--task">Current projects:<p class="count">{{count_projects_pending}}</p></p>
+	</div>
+	
+
+	<div class="tasks-widget">
+		<p class="unfinished-projects--task">Unfinished tasks:<p class="count">{{count_tasks}}</p></p>
+	</div> -->
+	
+
+</div>
+
+<div class="profile-area">
+	<p class="logged-in">Logged as:</p>
+	<div class="side-profile">
+	<i class="ph-user-circle"></i>
+	<a class="side-profile-link" href="{% url 'profile' user.profile.id %}"><p class="username">{{request.user}}</p></a>
+</div>
+
+<div class="login-area">
+	<a class="logout-link" href="{% url 'logout' %}"><i class="ph-sign-out"></i></a>
+{% else %}
+	<a href="{% url 'login' %}">Login</a>
+{% endif %}
+</div>
+
+</div>
+

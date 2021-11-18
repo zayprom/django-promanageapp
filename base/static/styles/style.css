@@ -1,0 +1,819 @@
+
+/***********************************
+BASICS
+***********************************/
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+
+	font-family: 'Maven Pro', sans-serif;
+	background-color: #F2E9E4;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 200px 1fr;
+
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.heading-primary {
+
+	padding-bottom: 2.4rem;
+}
+
+.heading-secondary {
+
+	font-size: 1.6rem;
+}
+
+.no-items {
+
+	font-size: 1.6rem;
+	font-weight: 600;
+	color: #22223B;
+}
+
+
+/***********************************
+MAIN SECTIONS
+***********************************/
+
+
+.side {
+
+	background-color: #22223B;
+	border-radius: 11px;
+	margin: 2.4rem;
+	padding: 2.4rem;
+	grid-row: 1/-1;
+	color: #fff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.project-list,
+.single-project-main,
+.main-container {
+
+	background-color: #fff;
+	border-radius: 11px;
+	grid-row: 2/-1;
+	margin: 2.4rem;
+	padding: 2.4rem;
+	text-align: left;
+	overflow: scroll;
+
+}
+
+.main-container--login {
+	background-color: #fff;
+	border-radius: 11px;
+	grid-row: 2/-1;
+	margin: 2.4rem;
+	padding: 10rem 30rem;
+	text-align: left;
+	overflow: scroll;
+}
+
+/*.info-widget {
+
+	grid-row: 3/-1;
+	background-color: #fff;
+	border-radius: 11px;
+	margin: 2.4rem;
+	padding: 2.4rem;
+	text-align: center;
+	height: 50vh;
+
+	overflow: scroll;
+}
+*/
+
+.ph-arrow-circle-left-fill {
+
+	color: #22223B;
+	font-size: 3.2rem;
+	padding-bottom: 1.2rem;
+}
+
+.ph-arrow-circle-left-fill:hover {
+
+	color: #4A4E69;
+	font-size: 3.2rem;
+	padding-bottom: 1.2rem;
+}
+
+/***********************************
+SIDEBAR
+***********************************/
+
+.side-link {
+
+	padding-bottom: 1.2rem;
+}
+
+.side-link:last-child {
+	padding-bottom: 0rem;
+}
+
+.count {
+
+	font-size: 2.4rem;
+	font-weight: 600;
+	padding: 1.2rem;
+	background-color: #9A8C98;
+	border-radius: 11px;
+}
+
+.side-create-link:link,
+.side-create-link:visited {
+
+	font-size: 1.2rem;
+	font-weight: 600;	
+	background-color: #9A8C98;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	border-radius: 6px;
+	text-decoration: none;
+	display: block;
+	box-shadow: 0 1rem 2.4rem rgba(0, 0, 0, 0.15);
+}
+
+.side-create-link:hover,
+.side-create-link:active {
+
+	background-color: #4A4E69;
+	transition: all 0.3s;
+
+}
+
+.side-projects-link:link,
+.side-projects-link:visited {
+
+	font-size: 1.2rem;
+	font-weight: 600;	
+	background-color: #9A8C98;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	border-radius: 6px;
+	text-decoration: none;
+	display: block;
+	box-shadow: 0 1rem 2.4rem rgba(0, 0, 0, 0.15);
+
+}
+
+.side-projects-link:hover,
+.side-projects-link:active {
+
+	background-color: #4A4E69;
+	transition: all 0.3s;
+
+}
+
+.side-tasks-link:link,
+.side-tasks-link:visited {
+
+	font-size: 1.2rem;
+	font-weight: 600;		
+	background-color: #9A8C98;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	border-radius: 6px;
+	text-decoration: none;
+	display: block;
+	box-shadow: 0 1rem 2.4rem rgba(0, 0, 0, 0.15);
+
+}
+
+.side-tasks-link:hover,
+.side-tasks-link:active {
+
+	background-color: #4A4E69;
+	transition: all 0.3s;
+
+}
+
+.logout-link:link,
+.logout-link:visited {
+
+	text-decoration: none;
+}
+
+.ph-sign-out {
+
+	font-size: 2.6rem;
+
+}
+
+.ph-user-circle {
+
+	font-size: 3.2rem;
+}
+
+.logged-in {
+
+	font-size: 1.4rem;
+	font-weight: 600;	
+	padding-bottom: 1rem;
+}
+
+.username {
+
+	padding-bottom: 2.4rem;
+}
+
+.side-profile-link:link,
+.side-profile-link:visited {
+
+	font-size: 1.6rem;
+	font-weight: 600;	
+	text-decoration: none
+
+}
+
+.side-profile-link:hover,
+.side-profile-link:active {
+
+}
+
+.info-widget-side {
+
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+	padding-bottom: 3.2rem;
+}
+
+/***********************************
+FORMS
+***********************************/
+
+.profile-details {
+
+	margin-top: 2.4rem;
+}
+
+/***********************************
+PROJECTS
+***********************************/
+
+.projects-list-main {
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.projects-grid {
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 1.2rem;
+}
+
+.unfinished-projects {
+	font-size: 1.8rem;
+}
+
+.unfinished-projects-delete {
+	font-size: 1.8rem;
+	padding-bottom: 1.2rem;
+}
+
+.head-info {
+
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 1.2rem;
+}
+
+.due-date {
+
+	font-size: 1.2rem;
+	font-weight: 600;		
+	background-color: #a0c4ff;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	border-radius: 50px;
+	text-decoration: none;
+	box-shadow: 0 0.5rem 2.4rem rgba(0, 0, 0, 0.15);
+
+}
+
+.due-date-passed {
+
+	font-size: 1.2rem;
+	font-weight: 600;		
+	background-color: #FF595E;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	border-radius: 50px;
+	text-decoration: none;
+	box-shadow: 0 0.5rem 2.4rem rgba(0, 0, 0, 0.15);
+
+}
+
+
+.project-price {
+
+	font-size: 1.2rem;
+	font-weight: 600;		
+	background-color: #c2c5aa;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	border-radius: 50px;
+	text-decoration: none;
+	box-shadow: 0 0.5rem 2.4rem rgba(0, 0, 0, 0.15);
+
+}
+
+.project-heading {
+
+	padding-bottom: 1.2rem;
+	color: #22223B;
+}
+
+
+
+.create-area {
+
+	padding-bottom: 2.4rem;
+	display: flex;
+	gap: 1.2rem;
+}
+
+.create-btn {
+
+	background-color: #22223B;
+	display: block;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	padding: 1.2rem;
+	font-size: 1.4rem;
+	font-family: inherit;
+	border: none;
+	border-radius: 11px;
+	font-weight: 500;
+	text-decoration: none;
+	box-shadow: 0 2rem 2.4rem rgba(0, 0, 0, 0.15);
+}
+
+.create-btn:hover {
+
+	background-color: #4A4E69;
+	transition: all 0.3s;
+
+}
+
+.search-bar {
+
+	justify-self: center;
+
+}
+
+.search-text {
+
+	width: 30rem;
+	padding: 1.2rem;
+	font-size: 1.4rem;
+	font-family: inherit;
+	border: none;
+	background-color: #F2E9E4;
+	border-radius: 11px;
+	overflow: hidden;
+
+}
+
+.project_status_text {
+
+	color: #22223B;
+	font-size: 1.2rem;
+	font-weight: 600;		
+	background-color: #9A8C98;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	border-radius: 50px;
+	text-decoration: none;
+}
+
+.project_status_text--pending {
+
+	color: #22223B;
+	font-size: 1.2rem;
+	font-weight: 600;		
+	background-color: #FFCA3A;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	border-radius: 50px;
+	text-decoration: none;
+	box-shadow: 0 0.5rem 2.4rem rgba(0, 0, 0, 0.15);
+
+}
+
+.project_status_text--active {
+
+	color: #22223B;
+	font-size: 1.2rem;
+	font-weight: 600;		
+	background-color: #8AC926;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	border-radius: 50px;
+	text-decoration: none;
+	box-shadow: 0 0.5rem 2.4rem rgba(0, 0, 0, 0.15);
+}
+
+.project_status_text--waiting {
+
+	color: #22223B;
+	font-size: 1.2rem;
+	font-weight: 600;		
+	background-color: #FF595E;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	border-radius: 50px;
+	text-decoration: none;
+	box-shadow: 0 0.5rem 2.4rem rgba(0, 0, 0, 0.15);
+}
+
+.project_status_text--finished {
+
+	color: #22223B;
+	font-size: 1.2rem;
+	font-weight: 600;		
+	background-color: #1982C4;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	border-radius: 50px;
+	text-decoration: none;
+	box-shadow: 0 0.5rem 2.4rem rgba(0, 0, 0, 0.15);
+}
+
+.last-task-field {
+	display: flex;
+	gap: 1.2rem;
+	align-items: center;
+}
+
+.ph-dots-three-circle-fill {
+	font-size: 1.8rem;
+	padding-bottom: 1.2rem;
+	color: #22223B;
+}
+
+.ph-dots-three-circle-fill:hover {
+	color: #4A4E69;
+}
+
+.project-intro-card,
+.project-date {
+	
+	color: #22223B;
+	font-size: 1.4rem;
+	font-weight: 600;
+	padding-bottom: 0.5rem;
+}
+
+
+.project-intro {
+
+	font-size: 1.3rem;
+}
+
+.project-subtitle {
+
+	font-size: 1.3rem;
+	padding-bottom: 1.6rem;
+}
+
+.project-date-text {
+
+	font-size: 1.3rem;
+	padding-bottom: 1.2rem;
+}
+
+.project-links {
+
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.project-card-link:link,
+.project-card-link:visited {
+	
+	font-size: 1.2rem;	
+	background-color: #22223B;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	border-radius: 50px;
+	text-decoration: none;
+	box-shadow: 0 1rem 2.4rem rgba(0, 0, 0, 0.15);
+
+}
+
+.project-card-link:hover,
+.project-card-link:active {
+	
+	background-color: #4A4E69;
+	transition: all 0.3s;
+}
+
+.project-card {
+
+	padding: 3rem;
+	background-color: #F2E9E4;
+	border-radius: 11px;
+	margin-top: 2.4rem;
+	margin-bottom: 2.4rem;
+
+}
+
+.project-card--complete {
+
+	padding: 3rem;
+	background-color: #B2E4DB;
+	border-radius: 11px;
+	margin-top: 2.4rem;
+	margin-bottom: 2.4rem;
+
+}
+
+.project-about,
+.project-description,
+.project-current-task {
+
+	font-size: 1.8rem;
+	font-weight: 600;
+	padding-bottom: 0.5rem;
+}
+
+.project-intro-on,
+.project-description-on {
+
+	font-size: 1.6rem;
+	padding-bottom: 1.2rem;
+
+}
+
+.single-project-nav {
+
+	display: flex;
+	gap: 3.2rem;
+	align-items: center;
+
+}
+
+.single-project-head-info {
+
+	display: flex;
+	gap: 3.2rem;
+	padding-bottom: 2.4rem;
+	justify-content: flex-end;
+
+}
+
+.ph-pencil {
+
+	font-size: 3.2rem;
+	color: #22223B;
+	padding-bottom: 1.2rem;
+
+}
+
+.ph-pencil:hover {
+	color: #4A4E69;
+	padding-bottom: 1.2rem;
+}
+
+.ph-trash {
+
+	font-size: 3.2rem;
+	color: #22223B;
+	padding-bottom: 1.2rem;
+
+}
+
+.ph-trash:hover {
+	color: #4A4E69;
+	1.2rem
+}
+
+.create-btn--single {
+
+	background-color: #22223B;
+	display: block;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	padding: 1.2rem;
+	font-size: 1.4rem;
+	font-family: inherit;
+	border: none;
+	border-radius: 11px;
+	font-weight: 500;
+	text-decoration: none;
+	box-shadow: 0 2rem 2.4rem rgba(0, 0, 0, 0.15);
+	margin-bottom: 1.2rem;
+}
+
+.create-btn--single:hover {
+
+	background-color: #4A4E69;
+	transition: all 0.3s;
+
+}
+
+/***********************************
+PROJECTS
+***********************************/
+
+.project-task-section {
+
+	padding-top: 3rem;
+}
+
+/***********************************
+TASKS
+***********************************/
+
+.unfinished-projects--task {
+
+	font-size: 1.4rem;
+	padding: 2.4rem 0 1.2rem 0; 
+}
+
+
+.project-card--task {
+
+	padding: 1.2rem 3rem 1.2rem 3rem;
+	background-color: #F2E9E4;
+	border-radius: 11px;
+	margin-top: 2.4rem;
+	margin-bottom: 2.4rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	column-gap: 1.2rem;
+	
+
+}
+
+.project-card--task--complete {
+
+	padding: 1.2rem 3rem 1.2rem 3rem;
+	background-color: #B2E4DB;
+	border-radius: 11px;
+	margin-top: 2.4rem;
+	margin-bottom: 2.4rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	column-gap: 1.2rem;
+	
+}
+
+.project-heading--task {
+
+	color: #22223B;
+
+}
+
+.project-intro--task {
+
+	font-size: 1.3rem;
+}
+
+.heading-secondary--task {
+
+	font-size: 1.6rem;
+	padding-bottom: 0.5rem;
+}
+
+.project-links-task {
+
+	display: flex;
+	gap: 1.2rem;
+}
+
+.important-tag {
+
+	font-size: 1.2rem;
+	font-weight: 600;		
+	background-color: #ffb4a2;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	border-radius: 50px;
+	text-decoration: none;
+	box-shadow: 0 0.5rem 2.4rem rgba(0, 0, 0, 0.15);
+
+}
+
+/***********************************
+FORMS
+***********************************/
+
+.form label {
+
+	display: block;
+	font-size: 1.6rem;
+	font-weight: 500;
+	margin-bottom: 1.2rem;
+}
+
+.form input,
+.form select,
+.form textarea {
+
+	width: 100%;
+	padding: 1.2rem;
+	font-size: 1.4rem;
+	font-family: inherit;
+	border: none;
+	background-color: #F2E9E4;
+	border-radius: 11px;
+	margin-bottom: 1.2rem;
+}
+
+
+.form input[type=submit] {
+
+	background-color: #22223B;
+	color: #fff;
+	cursor: pointer;
+}
+
+.form input[type=submit]:hover {
+
+	background-color: #4A4E69;
+	transition: all 0.3s;
+}
+
+
+
+.action-btn {
+
+	background-color: #22223B;
+	color: #fff;
+	cursor: pointer;
+	padding: 1.2rem;
+	font-size: 1.4rem;
+	font-family: inherit;
+	border: none;
+	border-radius: 11px;
+	font-weight: 500;
+	text-decoration: none;
+
+}
+
+.action-btn:hover {
+
+	background-color: #4A4E69;
+	transition: all 0.3s;
+}
+
+

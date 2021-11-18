@@ -1,0 +1,42 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="side">
+
+{% include 'sidebar.html' %}
+
+</div>
+
+
+<div class="main-container">
+<a class="go-back-link" href="{% url 'tasks' %}"><i class="ph-arrow-circle-left-fill"></i></a>
+<h1 class="heading-primary">Add task</h3>
+
+
+<form class="form" method="POST" action="">
+	{% csrf_token %}
+	
+		<label class="form-field">
+		Title</label>
+		<p class="forms">{{form.task_title}}</p>
+		<label class="form-field">Assign to project</label>
+		<p class="forms">{{form.task_belongs}}</p>
+		<label class="form-field">Description</label>
+		<p class="forms">{{form.task_description}}</p>
+		<label class="form-field">
+		Due Date</label>
+		<p class="forms">{{form.task_due_date}}</p>
+		<label class="form-field">
+		Important</label>
+		<p class="forms">{{form.task_important}}</p>
+		<label class="form-field">Complete</label>
+		<p class="forms">{{form.task_complete}}</p>
+	<input class="button" type="submit" value="Submit" />
+	
+</form>
+</div>
+
+{% endblock %}

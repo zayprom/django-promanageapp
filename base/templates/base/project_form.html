@@ -1,0 +1,49 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+<div class="side">
+
+{% include 'sidebar.html' %}
+
+</div>
+
+<div class="main-container">
+<a class="go-back-link" href="{% url 'projects' %}"><i class="ph-arrow-circle-left-fill"></i></a>
+<h1 class="heading-primary">Project form</h1>
+
+
+
+<form class="form" method="POST" action="">
+	{% csrf_token %}
+		<label class="form-field">
+		Title</label>
+		<p class="forms">{{form.project_title}}</p>
+		<label class="form-field">
+		Status</label>
+		<p class="forms">{{form.project_status}}</p>
+		<label class="form-field">
+		Short intro</label>
+		<p class="forms">{{form.project_intro}}</p>
+		<label class="form-field">
+		Description</label>
+		<p class="forms">{{form.project_description}}</p>
+		<label class="form-field">
+		Price</label>
+		<p class="forms">{{form.project_price}}</p>
+		<label class="form-field">
+		Due date</label>
+		<p class="forms">{{form.project_due_date}}</p>
+		<label class="form-field">
+		Complete</label>
+		<p class="forms">{{form.project_complete}}</p>
+
+	
+	<p><input class="button" type="submit" value="Submit" /></p>
+</form>
+</div>
+
+{% endblock %}
