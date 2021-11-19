@@ -1,6 +1,6 @@
 # ProManage App
 
-This is my first app built using [Django](https://www.djangoproject.com). It is a simple app that allows you to create a project, assign tasks to project and finish the project.
+This is my first app built using [Django](https://www.djangoproject.com). It is a simple app that allows you to create a project, assign tasks to project and finish the project. I used Django Class based views, pure HTML and CSS.
 
 ## Features
 
