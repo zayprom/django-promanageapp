@@ -10,7 +10,8 @@ This is my first app built using [Django](https://www.djangoproject.com). It is 
 - Complete project
 - Delete project
 - Search project
-- Assign task to project
+- Create and assign task to project
+- Edit task
 - Complete task
 
 ![Page - Login](https://bookee.cz/wp-content/uploads/2021/11/login.png)
@@ -19,9 +20,3 @@ This is my first app built using [Django](https://www.djangoproject.com). It is 
 ## Requirements
 
 - Python 3.9.5
-
-## Installation
-
-
-
-
