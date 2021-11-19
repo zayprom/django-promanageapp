@@ -2,6 +2,8 @@
 
 This is my first app built using [Django](https://www.djangoproject.com). It is a simple app that allows you to create a project, assign tasks to project and finish the project. I used Django Class based views ([CBV](https://docs.djangoproject.com/en/3.2/topics/class-based-views/)), pure HTML and CSS.
 
+The project is now on Heroku and you can check it [here](https://promanageapp-django.herokuapp.com)!
+
 Please note that this is only Desktop version.
 
 ## 📝 Features
